@@ -6,6 +6,8 @@ import Cohorte from '@/components/cohorte';
 import Program from '@/components/program';
 import Value from '@/components/value';
 import Company from '@/components/company';
+//import monument from '../public/assets/monument.png';
+//import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -19,10 +21,10 @@ export default function Home() {
             <p>de plus de 25 000 apprenants et apprenantes. Vous souhaitez vous aussi integrer un</p>
             <p>parcours de formation Simplon ou etre conseille-e dans votre parcours?</p>
           </div>
-          <Button title='contactez-nous' className='text-white text-sm text-center bg-red-600 rounded p-[1em] w-[15em] hover:text-white hover:bg-black'/>
+          <Button title='contactez-nous' href='../contact' className="text-white text-sm text-center bg-red-600 rounded p-[1em] w-[15em] hover:text-white hover:bg-black"/>
         </div>
 
-        <div className='bg-gray-300 w-1/2 h-full pb-[3em]'>
+        <div className='bg-gray-100 w-1/2 h-full pb-[3em]'>
           <div className='flex h-[16em] w-[70%] mx-auto justify-between pt-[2em]'>
             <div className='w-[47%] h-full rounded-[10px]'>
               <div className='h-[100%] w-[100%] bg-black opacity-90 rounded-[10px]'></div>
@@ -36,7 +38,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p className='mt-[1em] ml-[10em] hover:text-red-600'><a href='#'>Nos articles de blog</a></p>
+          <p className='mt-[1em] ml-[10em] hover:text-red-600 underline'><a href='#'>Nos articles de blog</a></p>
         </div>
       </div>
       {/* End section 1 */}
@@ -119,7 +121,7 @@ export default function Home() {
       {/* End section 4 */}
 
       {/* Section 5 */}
-      <div className="h-full px-[5%] py-[5%] bg-white">
+      <div className="h-full px-[5%] py-[5%] bg-white px-[5em]">
 				<div className="h-[20%]">
 					<h1 className="font-bold text-3xl">Nous sommes a</h1>
 					<p>
@@ -128,7 +130,7 @@ export default function Home() {
 					</p>
 				</div>
 				<div className="h-[100%] flex justify-between mt-[4em]">
-					<div className="h-80% w-[48%] rounded-[10px]">
+					<div className="h-[30em] w-[44%] rounded-[10px]">
 						<div className="h-[100%] w-[100%] rounded-[10px] bg-black opacity-[.8] p-[3%] text-white flex flex-col justify-between">
 							<p className="text-sm font-bold ">120 ETUDIANTS FORMES A CE JOUR</p>
 							<div>
@@ -141,8 +143,8 @@ export default function Home() {
 						</div>
 						
 					</div>
-					<div className="h-[100%] w-[48%] rounded-[10px]">
-						<div className="h-[47%] rounded-[10px]">
+					<div className="h-[100%] w-[44%] rounded-[10px]">
+						<div className="h-[14em] rounded-[10px]">
 							<div className="h-[100%] w-[100%] rounded-[10px] p-[5%] text-white bg-black opacity-[.8] flex flex-col justify-between">
 								<p className="text-sm font-bold">120 ETUDIANTS FORMES A CE JOUR</p>
                 <div>
@@ -156,7 +158,7 @@ export default function Home() {
 							</div>
 							
 						</div>
-						<div className="h-[47%] mt-[5%] rounded-[10px]">
+						<div className="h-[14em] mt-[2em] rounded-[10px]">
 							<div className="bg-black h-[100%] w-[100%] opacity-[.8] p-[5%] text-white rounded-[10px] flex flex-col justify-between">
 								<p className="text-sm font-bold">120 ETUDIANTS FORMES A CE JOUR</p>
                 <div className='flex flex-col justify-end'>
@@ -187,14 +189,14 @@ export default function Home() {
       {/* End section 6 */}
 
       {/* Section 7 */}
-      <div className='h-full w-full py-[3em] px-[4em]'>
+      <div className='h-full w-full py-[3em] px-[4em] my-[2em]'>
         <div className='h-full w-full flex'>
           <div className='w-1/2 h-full'>
             <h1 className='text-5xl font-bold text-black mb-[.5em]'>Les compagnies <br/> qui nous <br/> font confiance</h1>
             <p>Vous souhaitez devenir partenaire de l'ecole cliquer <br/> sur le bouton ci dessous</p>
             <Button title='En savoir plus' className='bg-red-600 w-[10em] p-[1em] text-white hover:bg-black rounded-[5px] mt-[2em]'/>
           </div>
-          <div className='w-1/2 h-full grid grid-cols-2'>
+          <div className='w-1/2 h-full grid grid-cols-2 mb-[10em]'>
             <div className='flex justify-center items-center'>
               <Company src='./assets/cnamgs.png' className='w-[6em]'/>
             </div>
@@ -215,7 +217,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-gray-200 '></div>
+        <div className='bg-gray-200 h-[15em] w-[95%] mx-auto rounded-[10px]'></div>
       </div>
       {/* End section 7 */}
     </main>
