@@ -1,6 +1,5 @@
 "use client"
 import React from 'react';
-import Map from '@/components/map'
 
 export default function Contact(){
       const handleSubmit = function handleSubmit(){
@@ -56,7 +55,7 @@ export default function Contact(){
                         </div>
                   </div>
                   <div className='h-[25em] w-full bg-gray-200 mb-[3em]'>
-                        <Map className=" h-[25em]"/>
+                  
                   </div>
                   <div>
                         <h1 className='text-5xl text-black font-bold text-center p-[1em] text-center'>F.A.Q</h1>
